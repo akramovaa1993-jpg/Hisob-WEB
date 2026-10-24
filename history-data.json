@@ -1,0 +1,463 @@
+{
+  "schema": "hisob-history-aggregate-v1",
+  "source": "HISOB_BAZA (bir martalik o‘qilgan nusxa)",
+  "snapshotDate": "2026-10-25",
+  "privacy": "Shaxsiy ma’lumotlar va batafsil yozuvlar kiritilmagan",
+  "tabs": [
+    {
+      "source": "Amallar_tarixi",
+      "records": 349
+    },
+    {
+      "source": "Kirimlar",
+      "records": 210
+    },
+    {
+      "source": "Import_tarixi",
+      "records": 3
+    },
+    {
+      "source": "GPX_Tahrir_Tarixi",
+      "records": 6
+    },
+    {
+      "source": "Reja_qoldiq_qaytarish",
+      "records": 9
+    },
+    {
+      "source": "Reja_qaytarish_nakladnoy",
+      "records": 2
+    },
+    {
+      "source": "Mahsulot_qaytarish",
+      "records": 0
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-10-24",
+      "category": "ADMIN_SAQLASH",
+      "count": 45
+    },
+    {
+      "date": "2026-10-24",
+      "category": "EXCEL_HISOBOT",
+      "count": 1
+    },
+    {
+      "date": "2026-10-24",
+      "category": "GPX_HISOBOT_TELEGRAM",
+      "count": 1
+    },
+    {
+      "date": "2026-10-24",
+      "category": "GPX_JONATILDI",
+      "count": 4
+    },
+    {
+      "date": "2026-10-24",
+      "category": "Kirimlar",
+      "count": 42
+    },
+    {
+      "date": "2026-10-24",
+      "category": "KOREKTROFKA_QOSHILDI",
+      "count": 4
+    },
+    {
+      "date": "2026-10-23",
+      "category": "ADMIN_SAQLASH",
+      "count": 15
+    },
+    {
+      "date": "2026-10-23",
+      "category": "Kirimlar",
+      "count": 17
+    },
+    {
+      "date": "2026-10-23",
+      "category": "TELEGRAM_KIRIM_POZITSIYA",
+      "count": 2
+    },
+    {
+      "date": "2026-10-23",
+      "category": "TELEGRAM_OMMAVIY_KIRIM",
+      "count": 1
+    },
+    {
+      "date": "2026-10-22",
+      "category": "ADMIN_SAQLASH",
+      "count": 34
+    },
+    {
+      "date": "2026-10-22",
+      "category": "GPX_HISOBOT_TELEGRAM",
+      "count": 1
+    },
+    {
+      "date": "2026-10-22",
+      "category": "Kirimlar",
+      "count": 33
+    },
+    {
+      "date": "2026-10-21",
+      "category": "EXCEL_HISOBOT",
+      "count": 1
+    },
+    {
+      "date": "2026-10-21",
+      "category": "Kirimlar",
+      "count": 18
+    },
+    {
+      "date": "2026-10-21",
+      "category": "TELEGRAM_KIRIM_POZITSIYA",
+      "count": 21
+    },
+    {
+      "date": "2026-10-21",
+      "category": "TELEGRAM_OMMAVIY_KIRIM",
+      "count": 8
+    },
+    {
+      "date": "2026-10-20",
+      "category": "ADMIN_SAQLASH",
+      "count": 15
+    },
+    {
+      "date": "2026-10-20",
+      "category": "EXCEL_HISOBOT",
+      "count": 6
+    },
+    {
+      "date": "2026-10-20",
+      "category": "GPX_HISOBOT_TELEGRAM",
+      "count": 2
+    },
+    {
+      "date": "2026-10-20",
+      "category": "GPX_QABUL_QILINDI",
+      "count": 1
+    },
+    {
+      "date": "2026-10-20",
+      "category": "GPX_TAHRIR",
+      "count": 1
+    },
+    {
+      "date": "2026-10-20",
+      "category": "GPX_Tahrir_Tarixi",
+      "count": 1
+    },
+    {
+      "date": "2026-10-20",
+      "category": "HISOB_HD_TELEGRAM",
+      "count": 2
+    },
+    {
+      "date": "2026-10-20",
+      "category": "HISOB_PNG_TELEGRAM",
+      "count": 8
+    },
+    {
+      "date": "2026-10-20",
+      "category": "Import_tarixi",
+      "count": 1
+    },
+    {
+      "date": "2026-10-20",
+      "category": "Kirimlar",
+      "count": 5
+    },
+    {
+      "date": "2026-10-20",
+      "category": "RUXSAT_BERILDI",
+      "count": 1
+    },
+    {
+      "date": "2026-10-20",
+      "category": "RUXSAT_KUTILMOQDA",
+      "count": 1
+    },
+    {
+      "date": "2026-10-20",
+      "category": "TELEGRAM_KIRIM_POZITSIYA",
+      "count": 2
+    },
+    {
+      "date": "2026-10-20",
+      "category": "TELEGRAM_OMMAVIY_KIRIM",
+      "count": 1
+    },
+    {
+      "date": "2026-10-19",
+      "category": "ADMIN_SAQLASH",
+      "count": 4
+    },
+    {
+      "date": "2026-10-19",
+      "category": "GPX_HISOBOT_TELEGRAM",
+      "count": 2
+    },
+    {
+      "date": "2026-10-19",
+      "category": "GPX_JONATILDI",
+      "count": 1
+    },
+    {
+      "date": "2026-10-19",
+      "category": "GPX_TAHRIR",
+      "count": 1
+    },
+    {
+      "date": "2026-10-19",
+      "category": "GPX_Tahrir_Tarixi",
+      "count": 1
+    },
+    {
+      "date": "2026-10-18",
+      "category": "Kirimlar",
+      "count": 2
+    },
+    {
+      "date": "2026-10-17",
+      "category": "ADMIN_SAQLASH",
+      "count": 1
+    },
+    {
+      "date": "2026-10-17",
+      "category": "Import_tarixi",
+      "count": 1
+    },
+    {
+      "date": "2026-10-17",
+      "category": "Kirimlar",
+      "count": 20
+    },
+    {
+      "date": "2026-10-16",
+      "category": "ADMIN_SAQLASH",
+      "count": 38
+    },
+    {
+      "date": "2026-10-16",
+      "category": "EXCEL_HISOBOT",
+      "count": 3
+    },
+    {
+      "date": "2026-10-16",
+      "category": "GPX_JONATILDI",
+      "count": 1
+    },
+    {
+      "date": "2026-10-16",
+      "category": "GPX_QABUL_QILINDI",
+      "count": 2
+    },
+    {
+      "date": "2026-10-16",
+      "category": "GPX_TAHRIR",
+      "count": 4
+    },
+    {
+      "date": "2026-10-16",
+      "category": "GPX_Tahrir_Tarixi",
+      "count": 4
+    },
+    {
+      "date": "2026-10-16",
+      "category": "Kirimlar",
+      "count": 33
+    },
+    {
+      "date": "2026-10-15",
+      "category": "ADMIN_SAQLASH",
+      "count": 15
+    },
+    {
+      "date": "2026-10-15",
+      "category": "EXCEL_HISOBOT",
+      "count": 2
+    },
+    {
+      "date": "2026-10-15",
+      "category": "Kirimlar",
+      "count": 17
+    },
+    {
+      "date": "2026-10-15",
+      "category": "KIRISH",
+      "count": 2
+    },
+    {
+      "date": "2026-10-15",
+      "category": "TELEGRAM_KIRIM_POZITSIYA",
+      "count": 17
+    },
+    {
+      "date": "2026-10-15",
+      "category": "TELEGRAM_OMMAVIY_KIRIM",
+      "count": 8
+    },
+    {
+      "date": "2026-10-14",
+      "category": "ADMIN_SAQLASH",
+      "count": 6
+    },
+    {
+      "date": "2026-10-14",
+      "category": "EXCEL_HISOBOT",
+      "count": 4
+    },
+    {
+      "date": "2026-10-14",
+      "category": "GPX_HISOBOT_TELEGRAM",
+      "count": 1
+    },
+    {
+      "date": "2026-10-14",
+      "category": "GPX_JONATILDI",
+      "count": 1
+    },
+    {
+      "date": "2026-10-14",
+      "category": "GPX_QABUL_QILINDI",
+      "count": 13
+    },
+    {
+      "date": "2026-10-14",
+      "category": "PAROL_ORNATILDI",
+      "count": 1
+    },
+    {
+      "date": "2026-10-14",
+      "category": "PLAN_DAVOM_ETDI",
+      "count": 2
+    },
+    {
+      "date": "2026-10-14",
+      "category": "PLAN_TOXTATILDI",
+      "count": 2
+    },
+    {
+      "date": "2026-10-14",
+      "category": "Reja_qaytarish_nakladnoy",
+      "count": 2
+    },
+    {
+      "date": "2026-10-14",
+      "category": "REJA_QOLDIQ_NAKLADNOY",
+      "count": 2
+    },
+    {
+      "date": "2026-10-14",
+      "category": "Reja_qoldiq_qaytarish",
+      "count": 9
+    },
+    {
+      "date": "2026-10-14",
+      "category": "RO‘YXAT",
+      "count": 1
+    },
+    {
+      "date": "2026-10-14",
+      "category": "RUXSAT_OZGARDI",
+      "count": 1
+    },
+    {
+      "date": "2026-10-14",
+      "category": "TELEGRAM_KIRIM_POZITSIYA",
+      "count": 3
+    },
+    {
+      "date": "2026-10-14",
+      "category": "TELEGRAM_OMMAVIY_KIRIM",
+      "count": 1
+    },
+    {
+      "date": "2026-10-14",
+      "category": "TELEGRAM_OMMAVIY_QAYTARISH",
+      "count": 1
+    },
+    {
+      "date": "2026-10-14",
+      "category": "TELEGRAM_PLAN_IMPORT",
+      "count": 1
+    },
+    {
+      "date": "2026-10-14",
+      "category": "TELEGRAM_QAYTARISH_POZITSIYA",
+      "count": 3
+    },
+    {
+      "date": "2026-10-13",
+      "category": "ADMIN_SAQLASH",
+      "count": 8
+    },
+    {
+      "date": "2026-10-13",
+      "category": "EXCEL_HISOBOT",
+      "count": 3
+    },
+    {
+      "date": "2026-10-13",
+      "category": "Import_tarixi",
+      "count": 1
+    },
+    {
+      "date": "2026-10-13",
+      "category": "Kirimlar",
+      "count": 23
+    },
+    {
+      "date": "2026-10-13",
+      "category": "PAROL_ORNATILDI",
+      "count": 1
+    },
+    {
+      "date": "2026-10-13",
+      "category": "PLAN_TOXTATILDI",
+      "count": 2
+    },
+    {
+      "date": "2026-10-13",
+      "category": "RO‘YXAT",
+      "count": 3
+    },
+    {
+      "date": "2026-10-13",
+      "category": "RUXSAT_BERILDI",
+      "count": 1
+    },
+    {
+      "date": "2026-10-13",
+      "category": "TELEGRAM_KIRIM",
+      "count": 1
+    },
+    {
+      "date": "2026-10-13",
+      "category": "TELEGRAM_OMMAVIY_KIRIM",
+      "count": 4
+    },
+    {
+      "date": "2026-10-13",
+      "category": "TELEGRAM_OMMAVIY_QAYTARISH",
+      "count": 1
+    },
+    {
+      "date": "2026-10-13",
+      "category": "TELEGRAM_QAYTARISH",
+      "count": 1
+    },
+    {
+      "date": "2026-10-13",
+      "category": "YOPIQ_TIZIM_V12",
+      "count": 1
+    },
+    {
+      "date": "2026-10-12",
+      "category": "ADMIN_SAQLASH",
+      "count": 1
+    }
+  ]
+}
