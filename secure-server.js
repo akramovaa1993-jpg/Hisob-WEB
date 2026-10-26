@@ -43,4 +43,4 @@ const server=http.createServer(async(req,res)=>{
   return respond(res,404,page('<h1>404</h1>'));
  }catch{return respond(res,500,'Server xatosi','text/plain')}
 });
-server.listen(port,'0.0.0.0');
+server.listen(port,'0.0.0.0',()=>{const db=snapshot();console.log('HISOB secure startup; archive tabs='+Object.keys(db?.sheets||{}).length+'; admin bootstrap='+Boolean(db));});
