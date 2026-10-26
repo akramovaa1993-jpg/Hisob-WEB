@@ -15,7 +15,7 @@ let failures=0,windowStart=Date.now();
 const server=http.createServer(async(req,res)=>{
  try{
   const url=new URL(req.url,'http://localhost');
-  if(url.pathname==='/health')return respond(res,200,JSON.stringify({ok:true,configured:ready}), 'application/json; charset=utf-8');
+  if(url.pathname==='/health')return respond(res,200,JSON.stringify({ok:true,configured:ready,checks:{loginPresent:username.length>0,passwordFormat: /^scrypt\$[a-f0-9]{32}\$[a-f0-9]{128}$/i.test(hash),sessionSecretLongEnough:secret.length>=32}}), 'application/json; charset=utf-8');
   if(!ready)return respond(res,503,page('<h1>HISOB WEB</h1><p>Login server tayyorlandi. Administrator hisobini xavfsiz sozlash hali yakunlanmagan. Ma’lumotlarga kirish yopiq.</p>'));
   if(req.method==='GET'&&url.pathname==='/login')return respond(res,200,page('<h1>HISOB.</h1><p>Himoyalangan tizimga kirish</p><form method="post" action="/login"><label>Login</label><input name="user" autocomplete="username" required maxlength="80"><label>Parol</label><input name="password" type="password" autocomplete="current-password" required><button>Kirish</button></form>'));
   if(req.method==='POST'&&url.pathname==='/login'){
