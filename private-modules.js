@@ -1,0 +1,1 @@
+(()=>{'use strict';const a=document.createElement('a');a.href='/archive';a.textContent='Baza arxivi · 24 varaq';a.style.cssText='position:fixed;right:18px;top:18px;z-index:9999999;background:#087a59;color:white;padding:10px 14px;border-radius:9px;text-decoration:none;font:700 13px Arial';document.body.appendChild(a)})();
