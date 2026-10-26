@@ -1,5 +1,5 @@
 'use strict';
-const http=require('node:http'),crypto=require('node:crypto');
+const http=require('node:http'),crypto=require('node:crypto'),fs=require('node:fs'),path=require('node:path');
 const port=Number(process.env.PORT||10000), secret=process.env.HISOB_SESSION_SECRET||'';
 const username=process.env.HISOB_ADMIN_USER||'',hash=process.env.HISOB_ADMIN_PASSWORD_SCRYPT||'';
 const ready=username.length>0&&hash.startsWith('scrypt$')&&secret.length>=32;
@@ -28,7 +28,11 @@ const server=http.createServer(async(req,res)=>{
   }
   if(req.method==='POST'&&url.pathname==='/logout'){sessions.delete(token(req));return respond(res,303,'','text/plain',{'Location':'/login','Set-Cookie':'hisob_session=; HttpOnly; Secure; SameSite=Strict; Path=/; Max-Age=0'})}
   if(!authenticated(req))return respond(res,303,'','text/plain',{'Location':'/login'});
-  if(url.pathname==='/private')return respond(res,200,page('<h1>HISOB WEB</h1><p>Kirish tasdiqlandi. To‘liq HISOB_BAZA nusxasi serverdagi maxfiy saqlashga yuklanmaguncha ko‘rsatish bloklangan.</p><form method="post" action="/logout"><button>Chiqish</button></form>'));
+  if(req.method==='GET'&&(url.pathname==='/'||url.pathname==='/private')){
+   const html=fs.readFileSync(path.join(__dirname,'index.html'),'utf8');
+   const banner='<div id="hisob-secure-note" style="position:fixed;z-index:999999;bottom:12px;left:12px;right:12px;max-width:900px;margin:auto;padding:10px 14px;border:1px solid #c5e0d0;background:#effbf3;color:#17583b;border-radius:12px;box-shadow:0 4px 15px #0002;font:12px Segoe UI,Arial,sans-serif">🔒 Himoyalangan HISOB WEB · Asl interfeys · Google Sheets ulanmagan, real ma’lumotlar hali import qilinmagan · <form style="display:inline" method="post" action="/logout"><button style="margin-left:12px;border:0;padding:6px 12px;border-radius:7px;background:#087b57;color:white;cursor:pointer">Chiqish</button></form></div>';
+   return respond(res,200,html.replace('</body>',banner+'</body>'),'text/html; charset=utf-8',{'Content-Security-Policy':"default-src 'self' data: blob: https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'"});
+  }
   return respond(res,404,page('<h1>404</h1>'));
  }catch{return respond(res,500,'Server xatosi','text/plain')}
 });
